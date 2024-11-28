@@ -1,0 +1,111 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    background: #93eafa;
+    color: rgb(7, 7, 7);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Contenedor para el título y la imagen en la barra */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container h1 {
+    margin-left: 20px;
+    font-size: 2.5rem;
+}
+
+/* Imagen del logo en la barra */
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Título de la sección */
+h2 {
+    color: #080808;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de misión y visión */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    max-width: 800px; /* Limita el ancho del texto */
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    width: 100%;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #93eafa;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste de responsividad */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-container h1 {
+        font-size: 2rem;
+    }
+    .logo {
+        width: 100px;
+    }
+}

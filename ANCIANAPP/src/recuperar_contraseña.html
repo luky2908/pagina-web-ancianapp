@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - ANCIANAPP</title>
+    <link rel="stylesheet" href="styles/style.css"> <!-- Asegúrate de tener el archivo CSS correcto -->
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="assets/abuelos 1.webp" alt="Logo ANCIANAPP" class="logo"> <!-- Logo de ANCIANAPP -->
+        <h1>Recuperar Contraseña</h1>
+        <p>Introduce el correo electrónico asociado a tu cuenta y te enviaremos un enlace para restablecer tu contraseña.</p>
+        
+        <form id="passwordRecoveryForm">
+            <div class="input-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn">Enviar Instrucciones</button>
+        </form>
+
+        <!-- Mensaje de confirmación -->
+        <p id="confirmationMessage" style="display: none; color: green; margin-top: 20px;">
+            Hemos enviado las instrucciones a tu correo electrónico.
+        </p>
+
+        <div class="footer-links">
+            <p>¿Recuperaste tu cuenta? <a href="iniciar-sesion.html">Inicia Sesión</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Capturamos el formulario y el mensaje de confirmación
+        const form = document.getElementById('passwordRecoveryForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+
+        // Evento de envío del formulario
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Muestra el mensaje de confirmación
+            confirmationMessage.style.display = 'block';
+
+            // Oculta el formulario después de mostrar el mensaje
+            form.style.display = 'none';
+
+            // Redirecciona a la página principal después de 3 segundos
+            setTimeout(function() {
+                window.location.href = 'index.html'; // Cambia a la ruta correcta de la página de inicio
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>

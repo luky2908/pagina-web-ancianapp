@@ -1,0 +1,15 @@
+/* Importa el estilo general de inicio de sesión */
+@import url('style.css');
+
+/* Ajustes específicos para la página de recuperación de contraseña */
+h1 {
+    font-size: 2rem; /* Tamaño del título específico */
+}
+
+/* Estilo del texto descriptivo */
+p {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 1rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+}

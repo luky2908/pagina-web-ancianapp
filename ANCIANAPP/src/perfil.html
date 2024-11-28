@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - ANCIANAPP</title>
+    <link rel="stylesheet" href="styles/style.css"> <!-- Asegúrate de tener tu archivo CSS -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <h1>Mi Perfil</h1>
+        <nav>
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a href="index.html" id="logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h2></h2>
+            <div class="profile-info">
+                <img src="assets/incognito.png" alt="Imagen de Perfil" class="profile-image">
+                <div class="profile-details">
+                    <h3>Nombre: Juan Pérez</h3>
+                    <p>Email: juan.perez@example.com</p>
+                    <p>Miembro desde: Enero 2024</p>
+                    <p>Descripción: Soy un usuario activo de ANCIANAPP, buscando nuevas formas de mejorar mi bienestar.</p>
+                </div>
+            </div>
+            <a href="editar-perfil.html" class="cta-button">Editar Perfil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ANCIANAPP - Prototipo creado por LUIS QUESADA</p>
+    </footer>
+
+    <script>
+        // Verifica si el usuario está logueado
+        if (!localStorage.getItem('isLoggedIn')) {
+            // Si no está logueado, redirige a la página de inicio de sesión
+            window.location.href = 'iniciar-sesion.html'; // Redirige si no está autenticado
+        }
+
+        // Función para cerrar sesión
+        document.getElementById('logout').addEventListener('click', function() {
+            // Elimina el estado de inicio de sesión
+            localStorage.removeItem('isLoggedIn');
+            // Redirige a la página de inicio de sesión
+            window.location.href = 'iniciar-sesion.html';
+        });
+    </script>
+</body>
+</html>

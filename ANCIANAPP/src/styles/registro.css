@@ -1,0 +1,9 @@
+/* Importa el estilo general de inicio de sesión */
+@import url('style.css');
+
+/* Ajustes específicos para registro */
+h1 {
+    font-size: 2rem; /* Tamaño del título específico */
+}
+
+/* Puedes agregar más estilos específicos aquí si es necesario */

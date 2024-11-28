@@ -1,0 +1,46 @@
+/* Estilo de la sección "Nuestros Servicios" */
+h2 {
+    color: #080808;
+    text-align: center; /* Centra el título de servicios */
+    font-size: 2rem; /* Tamaño del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Contenedor de servicios */
+.services-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y la imagen */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin: 20px 0; /* Espaciado entre la sección y otros elementos */
+}
+
+/* Estilo para el texto de servicios */
+.services-text {
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+    font-size: 1.1rem; /* Tamaño del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Estilo para la imagen de servicios */
+.services-image {
+    width: 150px; /* Tamaño de la imagen de servicios */
+    height: 150px; /* Mantener altura para que sea circular */
+    border-radius: 50%; /* Imagen circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto bonito */
+}
+
+/* Lista de servicios */
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+    text-align: center; /* Centra el texto de la lista */
+}
+
+ul li {
+    margin: 10px 0; /* Espacio entre los elementos de la lista */
+    font-size: 1.1rem; /* Tamaño del texto de la lista */
+}
+
+
